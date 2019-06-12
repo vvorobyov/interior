@@ -1,0 +1,674 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  color: #212121;
+  font-family: 'Montserrat', sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+img {
+  border: none;
+}
+.wraper {
+  width: 1366px;
+  height: 100%;
+  margin: 0px auto;
+}
+.wraper > header {
+  width: 1101px;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  padding: 63px 167px 0px 98px;
+}
+.logo {
+  width: 185px;
+  height: 22px;
+  background-image: url(../img/logo.svg);
+}
+.clr:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+/* НАСТРОЙКИ ШРИФТОВ*/
+.icon {
+  font-family: "interior";
+}
+.price {
+  font-family: "Gotham Pro";
+}
+/* настройки размеров*/
+.f72 {
+  font-size: 72px;
+}
+.f62 {
+  font-size: 62px;
+  letter-spacing: -3.9px;
+}
+.f48 {
+  font-size: 48px;
+}
+.f36 {
+  font-size: 36px;
+}
+.f30 {
+  font-size: 30px;
+}
+.f28 {
+  font-size: 28px;
+}
+.f23 {
+  font-size: 23px;
+}
+.f24 {
+  font-size: 24px;
+}
+.f22 {
+  font-size: 22px;
+}
+.f18 {
+  font-size: 18px;
+}
+.f14 {
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  line-height: 2em;
+}
+.f13 {
+  font-size: 13px;
+}
+.f12 {
+  font-size: 12px;
+}
+/* настройки написания */
+.title {
+  text-transform: uppercase;
+}
+.caption {
+  text-transform: capitalize;
+}
+/* настройки толщины */
+.b100 {
+  font-weight: 100;
+}
+.b300 {
+  font-weight: 300;
+}
+.b700 {
+  font-weight: 700;
+}
+/* настройки цвета*/
+.blue {
+  color: #1e88e5;
+}
+.red {
+  color: #e53935;
+}
+.green {
+  color: #43a047;
+}
+.grey {
+  color: #6c6c6c;
+}
+/* КОНЕЦ НАСТРОЙКИ ШРИФТОВ*/
+/* НАСТРОЙКИ РАЗМЕРОВ БЛОКОВ */
+.square70 {
+  width: 70px;
+  height: 70px;
+}
+.square270 {
+  width: 270px;
+  height: 270px;
+}
+.square370 {
+  width: 370px;
+  height: 370px;
+}
+.square570 {
+  width: 570px;
+  height: 570px;
+}
+.square683 {
+  width: 683px;
+  height: 683px;
+}
+/* КОНЕЦ НАСТРОЙКИ РАЗМЕРОВ БЛОКОВ */
+/* НАСТРОКИ КНОПОК */
+.btn-square {
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 0.2em;
+  outline: none;
+  box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+  background-color: #ffffff;
+  padding-left: 0.25em;
+  box-sizing: border-box;
+  font-family: "interior";
+  height: 1.6em;
+  width: 1.6em;
+  border-radius: 50%;
+  line-height: 1.6em;
+}
+.btn-square:hover {
+  background-color: #1e88e5;
+  color: #ffffff;
+}
+.btn-square:active {
+  box-shadow: none;
+}
+.btn-long {
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 0.2em;
+  outline: none;
+  box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+  background-color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 12em;
+  line-height: 2.5em;
+  border-radius: 1.25em;
+}
+.btn-xl {
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 0.2em;
+  outline: none;
+  box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+  background-color: #ffffff;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 21.25em;
+  line-height: 2.9em;
+  border-radius: 1.45em;
+  background-color: #e53935;
+  color: #f7f7f7;
+}
+.btn-xl:after {
+  font-size: 38px;
+  vertical-align: middle;
+}
+.btn-long:hover {
+  background-color: #1e88e5;
+  color: #ffffff;
+}
+.btn-xl:hover {
+  background-color: #43a047;
+}
+.btn-long:active,
+.btn-xl:active {
+  box-shadow: none;
+}
+.btn-flat {
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 0.2em;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2.5em;
+}
+.btn-flat:hover {
+  color: #43a047;
+}
+.btn-flat:active {
+  color: #e53935;
+}
+/* КОНЕЦ НАСТРОКИ КНОПОК */
+/* НАСТРОЙКИ МЕНЮ */
+nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+nav li {
+  list-style-type: none;
+  float: left;
+}
+nav a {
+  display: block;
+}
+nav.main-menu a {
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  color: #8c8c8c;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 0px 1em 0.5em;
+}
+nav.main-menu a:hover {
+  color: #212121;
+}
+nav.main-menu a.active {
+  color: #212121;
+  font-weight: 700;
+  border-bottom: 3px solid #212121;
+}
+nav.main-menu .icon-search {
+  font-size: 23px;
+  color: #000000;
+  height: 1em;
+  padding: 0em;
+  margin-top: -0.1em;
+}
+nav.main-menu .icon-search:hover {
+  color: #6c6c6c;
+}
+/* КОНЕЦ НАСТРОЙКИ МЕНЮ */
+/* НАСТРОЙКИ ПОДМЕНЮ1 */
+nav.submenu1 a {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6c6c6c;
+  padding: 0.75em 1.5em 0.75em 0.5em;
+}
+nav.submenu1 a:hover {
+  color: #212121;
+}
+nav.submenu1 a.active {
+  color: #212121;
+  border-bottom: 3px solid #212121;
+}
+/* КОНЕЦ НАСТРОЙКИ ПОДМЕНЮ1 */
+/* НАСТРОЙКИ ПОДМЕНЮ2 */
+nav.submenu2 {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+nav.submenu2 ul {
+  display: inline-block;
+  vertical-align: top;
+}
+nav.submenu2 a {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6c6c6c;
+  padding: 1.33em 1em;
+}
+nav.submenu2 a:hover {
+  color: #212121;
+}
+nav.submenu2 a.active {
+  color: #212121;
+}
+/* КОНЕЦ НАСТРОЙКИ ПОДМЕНЮ1 */
+/* НАСТРОЙКИ ТАБУЛЯЦИИ */
+nav.tab a {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0em 0.5em 0.33333333em 0.25em;
+  color: #6c6c6c;
+}
+nav.tab a:hover {
+  color: #212121;
+}
+nav.tab a.active {
+  color: #212121;
+  border-bottom: 3px solid #212121;
+}
+nav.tab ul {
+  position: relative;
+  overflow: hidden;
+}
+nav.tab ul:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: -1;
+  box-sizing: border-box;
+  display: block;
+  width: 300px;
+  border-bottom: 1px solid #6c6c6c;
+}
+/* КОНЕЦ НАСТРОЙКИ ТАБУЛЯЦИИ */
+/* НАСТРОЙКА ПЛИТКИ ТОВАРОВ */
+.product-list {
+  margin-right: -30px;
+  margin-bottom: -30px;
+  overflow: hidden;
+}
+.product-list a > img {
+  vertical-align: bottom;
+}
+.product-list > li {
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  list-style-type: none;
+  float: left;
+}
+.product-list > li:hover > .hover-content {
+  display: block;
+}
+.product-list > li > .hover-content {
+  display: none;
+  border: 1px solid #9c9c9c;
+  background-color: #f7f7f7;
+  opacity: 0.9;
+  text-align: center;
+  box-sizing: border-box;
+}
+.product-list > li.square570 {
+  padding-top: 180px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.product-list > li.square570 > .caption {
+  margin-top: 0.25em;
+}
+.product-list > li.square570 > .caption + p {
+  overflow: hidden;
+  width: 332px;
+  max-height: 4em;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
+.product-list.s270 > li:not([class]) {
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+}
+.product-list.s270 > li:not([class]) > .hover-content {
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+  padding: 61px 32px 0px;
+}
+.product-list.s270 > li:not([class]) > .hover-content > .caption {
+  padding-top: 0.66666667em;
+  padding-bottom: 0.5em;
+}
+.product-list.s270 > li:not([class]) > .hover-content > .caption + p {
+  max-height: 4em;
+  overflow: hidden;
+}
+.product-list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* КОНЕЦ НАСТРОЙКИ ПЛИТКИ ТОВАРОВ */
+/* НАСТРОКИ БЛОКОВ */
+section,
+article {
+  position: relative;
+  overflow: hidden;
+}
+img.bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+.slider {
+  height: 800px;
+  box-sizing: border-box;
+}
+.slider > article.content {
+  padding: 373px 98px 0px 98px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.slider > article.content .f14 {
+  width: 458px;
+  padding-top: 11px;
+  padding-bottom: 28px;
+}
+.slider footer {
+  position: absolute;
+  bottom: 19px;
+  width: 100%;
+  text-align: center;
+  font-size: 0px;
+}
+.slider footer .circle {
+  background-color: #c7c7c7;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 5px;
+}
+.slider footer .circle.active {
+  width: 40px;
+  height: 40px;
+  background-color: #212121;
+  margin-bottom: 0px;
+}
+.slider footer .circle:hover {
+  background-color: #212121;
+}
+main > .top {
+  padding: 250px 98px 0px 98px;
+  height: 360px;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+.contacts li {
+  width: 370px;
+  height: 370px;
+  padding: 50px;
+  border: 1px solid #9c9c9c;
+  box-sizing: border-box;
+  text-align: center;
+}
+.contacts li .icon {
+  margin-bottom: 0.37em;
+}
+.contacts li .f14 {
+  color: #6c6c6c;
+  margin-top: 1.5em;
+  line-height: 1em;
+}
+.contacts li .f14 b {
+  color: #6c6c6c;
+  font-weight: 700;
+}
+.contacts li .f14 a {
+  font-weight: 700;
+  color: #212121;
+}
+.contacts li .f14 a:hover {
+  color: #8c8c8c;
+}
+footer.refresh {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 2.33333333em;
+  padding-bottom: 0.5em;
+}
+footer.refresh a:hover {
+  color: #6c6c6c;
+}
+.review header {
+  padding-top: 120px;
+}
+.review .product-list > li {
+  width: 570px;
+  text-align: center;
+}
+.review .product-list > li .square70 {
+  padding: 10px 5px;
+}
+.review .product-list > li.content {
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+.review .product-list > li.content .caption {
+  margin-bottom: 0.33333333em;
+}
+.review .product-list > li.content .price.f36 {
+  margin-top: 0.33333333em;
+  margin-bottom: 0.5em;
+}
+.review .product-list > li.content .price.f16 {
+  margin-top: 2.5em;
+  text-align: left;
+  line-height: 1.5em;
+  padding: 0px 5px;
+}
+.block {
+  padding: 120px 98px 120px 98px;
+}
+.block header {
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+article.square683 {
+  position: relative;
+  padding-top: 228px;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+article.square683 .caption {
+  padding-top: 7px;
+}
+article.square683 .caption + p {
+  overflow: hidden;
+  width: 374px;
+  max-height: 4em;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
+/* КОНЕЦ НАСТРОКИ БЛОКОВ */
+/* НАСТРОЙКА MOBILE */
+.mobile {
+  height: 516px;
+  background-image: url(../img/phone_bg.jpg);
+  box-sizing: border-box;
+}
+.mobile .store {
+  margin-right: 10px;
+}
+.mobile .title.f62 {
+  width: 7em;
+}
+.mobile .title.f62 + p {
+  margin-top: 0.3em;
+  margin-bottom: 1.5em;
+}
+/* КОНЕЦ НАСТРОЙКА MOBILE */
+/* НАСТРОЙКА FOOTER */
+main {
+  min-height: 100%;
+}
+main:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 384px;
+}
+.wraper > footer {
+  background-color: #f7f7f7;
+  padding: 120px 98px 30px 98px;
+  box-sizing: border-box;
+  height: 384px;
+  margin-top: -384px;
+}
+.wraper > footer section {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wraper > footer .contacts,
+.wraper > footer .useful,
+.wraper > footer .subscribe {
+  height: 206px;
+}
+.wraper > footer .contacts {
+  width: 270px;
+  padding-right: 30px;
+}
+.wraper > footer .contacts a:hover {
+  color: #6c6c6c;
+}
+.wraper > footer .useful {
+  width: 470px;
+  padding-right: 30px;
+}
+.wraper > footer .useful ul {
+  overflow: hidden;
+}
+.wraper > footer .useful ul > li {
+  list-style-type: none;
+  float: left;
+  width: 235px;
+}
+.wraper > footer .useful ul > li > a {
+  text-transform: uppercase;
+  line-height: 1.5em;
+  font-weight: 700;
+}
+.wraper > footer .useful ul > li:hover a {
+  color: #6c6c6c;
+}
+.wraper > footer .subscribe {
+  width: 370px;
+}
+.wraper > footer .subscribe p {
+  padding-bottom: 26px;
+}
+.wraper > footer .subscribe #subscribe-form {
+  position: relative;
+}
+.wraper > footer .subscribe #subscribe {
+  width: 370px;
+  height: 0px;
+  padding: 24px 40px 24px 19px;
+  border: 1px solid #d9dee1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.wraper > footer .subscribe #submit {
+  position: absolute;
+  top: 2px;
+  right: 1px;
+  font-size: 22px;
+  line-height: 47px;
+  border: none;
+  background: #ffffff;
+  padding-right: 14px;
+  padding-left: 5px;
+  font-family: "interior";
+  color: #6c6c6c;
+}
+.wraper > footer .subscribe #submit:hover {
+  color: #212121;
+}
+.wraper > footer .subscribe #submit:focus {
+  outline: none;
+}
+.wraper > footer .title.f18 {
+  padding-bottom: 24px;
+}
+.wraper > footer .f14 {
+  line-height: 1.5em;
+}
+.wraper > footer .bottom .left {
+  width: 400px;
+}
+.wraper > footer .bottom .social {
+  width: 370px;
+  text-align: center;
+}
+.wraper > footer .bottom a:hover {
+  color: #212121;
+}
+/* КОНЕЦ НАСТРОЙКА FOOTER */

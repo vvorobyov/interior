@@ -1,0 +1,768 @@
+@width: 1366px;
+@padding-left: 98px;
+@padding-right: 98px;
+@padding-top: 120px;
+@padding-bottom: 120px;
+@slider-height: 800px;
+
+
+
+@color0: #000000;
+@color1: #212121;
+@color2: #6c6c6c;
+@color3: #8c8c8c;
+@color4: #c7c7c7;
+@color5: #1e88e5;
+@color6: #e53935;
+@color7: #43a047;
+@color8: #ffffff;
+@color9: #f7f7f7;
+@color10: #d9dee1;
+@color11: #9c9c9c;
+@color12: #f5f5f5;
+@color13: #f4f4f4;
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration:none;
+    color: @color1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+img{
+    border: none;
+}
+.wraper {
+    width: @width;
+    height: 100%;
+    margin: 0px auto;
+    >header {
+        width: @width - @padding-left - @padding-right - 69px;
+        position:absolute;
+        top: 0px;
+        z-index:1;
+        padding: 63px @padding-right + 69px 0px @padding-left;
+    }
+}
+
+
+
+.logo{
+    width: 185px;
+    height: 22px;
+    background-image: url(../img/logo.svg);
+}
+.clearfix() {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.clr:after{
+    .clearfix();
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float: right;
+}
+
+/* НАСТРОЙКИ ШРИФТОВ*/
+.icon{
+    font-family: "interior";
+}
+.price{
+    font-family: "Gotham Pro";
+}
+/* настройки размеров*/
+.f72{
+    font-size: 72px;
+}
+
+.f62 {
+    font-size: 62px;
+    letter-spacing: -3.9px;
+}
+
+.f48 {
+    font-size: 48px;
+}
+
+.f36 {
+    font-size: 36px;
+}
+
+.f30 {
+    font-size: 30px;
+}
+.f28 {
+    font-size: 28px;
+}
+.f23 {
+    font-size: 23px;
+}
+.f24 {
+    font-size: 24px;
+}
+
+.f22 {
+    font-size: 22px;
+}
+
+.f18 {
+    font-size: 18px;
+}
+.f14 {
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    line-height: 2em;
+}
+
+.f13{
+    font-size: 13px;
+}
+
+.f12{
+    font-size: 12px;
+}
+
+/* настройки написания */
+
+.title {
+    text-transform: uppercase;
+}
+
+.caption {
+    text-transform: capitalize;
+}
+
+/* настройки толщины */
+.b100{
+    font-weight: 100;
+}
+.b300{
+    font-weight: 300;
+}
+.b700{
+    font-weight: 700;
+}
+
+/* настройки цвета*/
+.blue {
+    color: @color5;
+}
+
+.red {
+    color: @color6;
+}
+
+.green {
+    color: @color7;
+}
+
+.grey{
+    color: @color2;
+}
+/* КОНЕЦ НАСТРОЙКИ ШРИФТОВ*/
+
+/* НАСТРОЙКИ РАЗМЕРОВ БЛОКОВ */
+.square70 {
+    width: 70px;
+    height: 70px;
+}
+
+.square270 {
+    width: 270px;
+    height: 270px;
+}
+
+
+.square370 {
+    width: 370px;
+    height: 370px;
+}
+
+.square570 {
+    width: 570px;
+    height: 570px;
+}
+
+.square683 {
+    width: @width / 2;
+    height: @width / 2;
+}
+/* КОНЕЦ НАСТРОЙКИ РАЗМЕРОВ БЛОКОВ */
+
+/* НАСТРОКИ КНОПОК */
+.btn() {
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0.2em;
+    outline: none;
+}
+.btn-shadow() {
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    background-color: @color8;
+}
+
+.btn-square{
+    .btn();
+    .btn-shadow();
+    padding-left: 0.25em;
+    box-sizing:border-box;
+    font-family: "interior";
+    height: 1.6em;
+    width: 1.6em;
+    border-radius: 50%;
+    line-height: 1.6em;
+}
+.btn-square:hover{
+    background-color: @color5;
+    color: @color8
+}
+.btn-square:active{
+    box-shadow: none;
+}
+
+.btn-long {
+    .btn();
+    .btn-shadow();
+    .f18;
+    .b700;
+    .title;
+    width: 12em;
+    line-height: 2.5em;
+    border-radius: 1.25em;
+}
+
+.btn-xl{
+    .btn();
+    .btn-shadow();
+    .f24;
+    .title;
+    .b700;
+    width: 21.25em;
+    line-height: 2.9em;
+    border-radius: 1.45em;
+    background-color: @color6;
+    color: @color9;
+}
+
+.btn-xl:after{
+    font-size: 38px;
+    vertical-align:middle;
+}
+
+
+.btn-long:hover {
+    background-color: @color5;
+    color: @color8
+}
+
+.btn-xl:hover{
+    background-color: @color7;
+}
+.btn-long:active, .btn-xl:active{
+    box-shadow: none;
+}
+
+.btn-flat {
+    .btn();
+    .f18;
+    .b700;
+    .title;
+    line-height:2.5em;
+}
+.btn-flat:hover{
+    .green;
+}
+
+.btn-flat:active{
+    .red;
+}
+
+/* КОНЕЦ НАСТРОКИ КНОПОК */
+
+/* НАСТРОЙКИ МЕНЮ */
+nav:after {
+    .clearfix();
+}
+nav{
+    li{
+        list-style-type:none;
+        float: left
+    }
+    a{
+        display:block;
+    }
+} 
+nav.main-menu{
+    a {
+        font-size: 14px;
+        letter-spacing:1.4px;
+        color: @color3;
+        .b300;
+        .title;
+        padding: 0px 1em 0.5em;
+    }
+    a:hover {
+        color: @color1;
+    }
+    a.active{
+        color: @color1;
+        .b700;
+        border-bottom: 3px solid @color1;
+    }
+    .icon-search{
+        .f23;
+        color: @color0;
+        height: 1em;
+        padding: 0em;
+        margin-top: -0.1em;
+
+    }
+    .icon-search:hover{
+        color: @color2;
+    }
+}
+
+/* КОНЕЦ НАСТРОЙКИ МЕНЮ */
+
+/* НАСТРОЙКИ ПОДМЕНЮ1 */
+nav.submenu1{
+    a{
+        .f18;
+        .b700;
+        .title;
+        color: @color2;
+        padding: 0.75em 1.5em 0.75em 0.5em;
+    }
+    a:hover {
+        color: @color1;
+    }
+    a.active{
+        color: @color1;
+        border-bottom: 3px solid #212121;
+    }
+}
+
+/* КОНЕЦ НАСТРОЙКИ ПОДМЕНЮ1 */
+/* НАСТРОЙКИ ПОДМЕНЮ2 */
+nav.submenu2{
+    background-color: @color13;
+    text-align:center;
+    ul{
+        display: inline-block;
+        vertical-align:top;
+    }
+    a{
+        .f18;
+        .b700;
+        .title;
+        color: @color2;
+        padding: 1.33em 1em;
+    }
+    a:hover {
+        color: @color1;
+    }
+    a.active{
+        color: @color1;
+    }
+}
+
+/* КОНЕЦ НАСТРОЙКИ ПОДМЕНЮ1 */
+
+/* НАСТРОЙКИ ТАБУЛЯЦИИ */
+nav.tab{
+    a{
+        .f36;
+        .b700;
+        .caption;
+        padding: 0em 0.5em 1em/3 0.25em;
+        color: @color2;
+    }
+    a:hover{
+        color: @color1;
+    }
+    a.active{
+        color: @color1;
+        border-bottom: 3px solid @color1;
+    }
+    ul{
+        position: relative;
+        overflow: hidden;
+    }
+    ul:after{
+        content:"";
+        position:absolute;
+        left: 0px;
+        bottom: 0px;
+        z-index: -1;
+        box-sizing: border-box;
+        display:block;
+        width: 300px;
+        border-bottom: 1px solid @color2;
+    }
+}
+/* КОНЕЦ НАСТРОЙКИ ТАБУЛЯЦИИ */
+
+/* НАСТРОЙКА ПЛИТКИ ТОВАРОВ */
+.product-list{
+    a>img{
+        vertical-align: bottom;
+    }
+    margin-right: -30px;
+    margin-bottom: -30px;
+    overflow: hidden;
+    >li {
+        position: relative;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        list-style-type: none;
+        float:left;
+    }
+    >li:hover>.hover-content{
+        display: block;
+    }
+    >li>.hover-content {
+        display: none;
+        border: 1px solid @color11; 
+        background-color: @color9;
+        opacity: 0.9;
+        text-align:center;
+        box-sizing: border-box;
+    }
+    >li.square570 {
+        padding-top: 180px;
+        padding-left: 30px;
+        box-sizing:border-box;
+        >.caption{
+            margin-top: 0.25em;
+        }
+        >.caption+p{
+            overflow:hidden;
+            width: 332px;
+            max-height: 4em;
+            margin-top: 0.5em;
+            margin-bottom: 2em;
+        }
+
+    }
+}
+.product-list.s270{
+    >li:not([class]) {
+        .square270;
+        overflow:hidden;
+    }
+    >li:not([class])>.hover-content{
+        .square270;
+        overflow:hidden;
+        padding: 61px 32px 0px;
+        >.caption{
+            padding-top: 2em/3;
+            padding-bottom: 0.5em;
+        }
+        >.caption + p {
+            max-height:4em;
+            overflow: hidden;
+        }
+    }
+}
+
+
+
+.product-list:after{
+    .clearfix();
+}
+/* КОНЕЦ НАСТРОЙКИ ПЛИТКИ ТОВАРОВ */
+
+/* НАСТРОКИ БЛОКОВ */
+
+section, article{
+    position: relative;
+    overflow: hidden;
+}
+
+img.bg {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    z-index:-1;
+}
+
+.slider {
+    height: @slider-height;
+    box-sizing: border-box;
+    >article.content{
+        padding: 373px @padding-left 0px @padding-right;
+        height: 100%;
+        box-sizing:border-box;
+        .f14 {
+            width: 458px;
+            padding-top: 11px;
+            padding-bottom: 28px;
+        }
+    }
+    footer {
+        position:absolute;
+        bottom: 19px;
+        width: 100%;
+        text-align:center;
+        font-size: 0px;
+        .circle{
+            background-color: @color4;
+            width: 30px;height: 30px;
+            display: inline-block;
+            border-radius: 50%;
+            margin: 5px;
+        }
+        .circle.active {
+            width: 40px;
+            height: 40px;
+            background-color: @color1;
+            margin-bottom: 0px;
+        }
+        .circle:hover{
+            background-color: @color1;
+        }
+    }
+}
+
+main>.top{
+    padding: 250px @padding-right 0px @padding-left;
+    height: 360px;
+    box-sizing: border-box;
+    background-color: @color12;
+}
+
+.contacts{
+    li{
+        .square370;
+        padding: 50px;
+        border: 1px solid @color11;
+        box-sizing:border-box;
+        text-align: center;
+        .icon{
+            margin-bottom: 0.37em;
+        }
+        .f14{
+            color: @color2;
+            margin-top: 1.5em;
+            line-height: 1em;
+            b{
+                color: @color2;
+                .b700;
+            }
+            a {
+                .b700;
+                color: @color1;
+            }
+            a:hover{
+                color:@color3;
+            }
+        }
+    }
+}
+
+footer.refresh{
+    .f30;
+    text-align:center;
+    padding-top: 2em + 1em/3;
+    padding-bottom: 0.5em;
+    a:hover{
+        color: @color2;
+    }
+}
+
+.review {
+    header{
+        padding-top: @padding-top;
+    }
+    .product-list{
+        >li{
+            width: 570px;
+            text-align: center;
+            .square70{
+                padding: 10px 5px;
+            }
+        }
+        >li.content{
+            padding-left: 50px;
+            box-sizing:border-box;
+            .caption{
+                margin-bottom: 1em/3;
+            }
+            .price.f36{
+                margin-top: 1em/3;
+                margin-bottom: 0.5em;
+            }
+            .price.f16{
+                margin-top: 2.5em;
+                text-align:left;
+                line-height: 1.5em;
+                padding: 0px 5px;
+            }
+        }
+    }
+}
+
+.block{
+    padding: @padding-top @padding-right @padding-bottom @padding-left;
+    header {
+        overflow: hidden;
+        padding-bottom: 50px;
+    }
+}
+
+article.square683 {
+    position: relative;
+    padding-top: 228px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    .caption{
+        padding-top: 7px;
+    }
+
+    .caption + p {
+        overflow:hidden;
+        width: 374px;
+        max-height: 4em;
+        margin-top: 0.5em;
+        margin-bottom: 2em;
+    }
+}
+/* КОНЕЦ НАСТРОКИ БЛОКОВ */
+
+/* НАСТРОЙКА MOBILE */
+.mobile {
+    height: 516px;
+    background-image: url(../img/phone_bg.jpg);
+    box-sizing: border-box;
+    .store{
+        margin-right: 10px;
+    }
+    .title.f62 {
+        width: 7em;
+    }
+    .title.f62 + p {
+        margin-top: 0.3em;
+        margin-bottom: 1.5em;
+    }
+}
+/* КОНЕЦ НАСТРОЙКА MOBILE */
+
+/* НАСТРОЙКА FOOTER */
+main{
+    min-height:100%;
+}
+
+main:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 384px;
+}
+
+.wraper>footer{
+    background-color: @color9;
+    padding: 120px 98px 30px 98px;
+    box-sizing: border-box;
+    height: 384px;
+    margin-top: -384px;
+    section{
+        .clearfix();
+    }
+    .contacts, .useful, .subscribe{
+        height: 206px;
+    }
+    .contacts {
+        width: 270px;
+        padding-right: 30px;
+        a:hover{
+            color: @color2;
+        }
+    }
+    .useful {
+        width: 470px;
+        padding-right: 30px;
+        ul{
+            overflow: hidden;
+            >li{
+                list-style-type:none;
+                float:left;
+                width:235px;
+                >a{
+                    .title;
+                    .f14;
+                    .b700;
+                }
+            }
+            >li:hover a{
+                color: @color2;
+            }
+        }
+    }
+    .subscribe{
+        width: 370px;
+        p{
+            padding-bottom:26px;
+        }
+        #subscribe-form{
+            position:relative;
+        }
+        #subscribe{
+            width: 370px;
+            height: 0px;
+            padding: 24px 40px 24px 19px;
+            border: 1px solid @color10;
+            box-sizing:border-box;
+            background-color: @color8;
+        }
+        #submit{
+            position:absolute;
+            top: 2px;
+            right: 1px;
+            font-size: 22px;
+            line-height: 47px;
+            border:none;
+            background: @color8;
+            padding-right: 14px;
+            padding-left: 5px;
+            font-family: "interior";
+            color: @color2;
+        }
+        #submit:hover{
+            color: @color1;
+        }
+        #submit:focus{
+            outline:none;
+        }
+    }
+    .title.f18{
+        padding-bottom: 24px;
+    }
+    .f14 {
+        line-height: 1.5em;
+    }
+    .bottom{
+        .left {
+            width: 400px;
+        }
+        .social{
+            width: 370px;
+            text-align: center;
+        }
+        a:hover{
+            color: @color1;
+        }
+    }
+
+
+}
+/* КОНЕЦ НАСТРОЙКА FOOTER */
